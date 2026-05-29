@@ -594,6 +594,20 @@
      margin: 0 auto 1.5rem;
    }
    .footer-copy { font-size: 0.75rem; color: var(--tan); letter-spacing: 0.06em; }
+   .footer-credit {
+     margin-top: 0.6rem;
+     font-size: 0.72rem;
+     color: var(--tan);
+     letter-spacing: 0.08em;
+   }
+   .footer-credit a {
+     color: var(--navy);
+     font-weight: 500;
+     border-bottom: 1px solid var(--gold);
+     padding-bottom: 1px;
+     transition: color 0.2s, border-color 0.2s;
+   }
+   .footer-credit a:hover { color: var(--pink); border-color: var(--pink); }
    
    /* ===== ANIMATIONS ===== */
    .fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.7s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
