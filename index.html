@@ -8,6 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Caveat:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">ana made studios</div>
+    <div class="loader-bar"></div>
+    <div class="loader-tagline">turning clay into tiny joys ✦</div>
+  </div>
+
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
@@ -42,7 +49,7 @@
     </div>
     <div class="hero-content">
       <p class="hero-tag">handcrafted clay jewelry ✦ northern california</p>
-      <h1 class="hero-title">Turning clay<br/><em>into tiny joys</em></h1>
+      <h1 class="hero-title reveal-text">Turning clay<br/><em>into tiny joys</em></h1>
       <p class="hero-sub">Vibrant, bold, fresh pieces made with love.<br/>Tarnish-free · Hypoallergenic · Freshwater pearls.</p>
       <div class="hero-btns">
         <a href="https://www.etsy.com" target="_blank" class="btn btn-primary">Shop on Etsy</a>
@@ -50,7 +57,7 @@
       </div>
     </div>
     <div class="hero-img-wrap">
-      <div class="hero-img-frame">
+      <div class="hero-img-frame hero-parallax">
         <div class="hero-img-placeholder">
           <span>✦ jewelry photo here ✦</span>
         </div>
@@ -101,7 +108,7 @@
     </div>
     <div class="about-text-col">
       <p class="section-label">the story</p>
-      <h2 class="section-title">Hi, I'm <em>Anakaren</em></h2>
+      <h2 class="section-title reveal-text">Hi, I'm <em>Anakaren</em></h2>
       <p class="about-body">
         It all started at a little workshop my friend Gera hosted in February 2025 — I made tiny donut earrings and instantly fell in love. Since then, clay has become my therapy, my creative outlet, and my joy.
       </p>
@@ -125,11 +132,16 @@
     <img src="images/bee.svg"      class="deco deco-gallery-bee"     alt="" aria-hidden="true"/>
     <div class="gallery-header">
       <p class="section-label">the collection</p>
-      <h2 class="section-title">tiny joys, <em>big love</em></h2>
+      <h2 class="section-title reveal-text">tiny joys, <em>big love</em></h2>
       <p class="gallery-sub">Each piece is one-of-a-kind, made by hand with care.</p>
     </div>
 
-    <div class="gallery-grid">
+    <div class="scroll-hint">
+      <div class="scroll-hint-line"></div>
+      drag to explore
+    </div>
+    <div class="gallery-scroll-wrap" id="galleryScroll">
+      <div class="gallery-scroll-track">
       <!-- Card 1 -->
       <div class="gallery-card" data-index="0">
         <div class="gallery-card-img">
@@ -205,6 +217,7 @@
           <span class="card-name">donut earrings</span>
           <span class="card-badge">the og</span>
         </div>
+      </div>
       </div>
     </div>
 
