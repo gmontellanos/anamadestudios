@@ -736,6 +736,8 @@
    .reveal-text {
      overflow: hidden;
      display: block;
+     padding-bottom: 0.15em;
+     margin-bottom: -0.15em;
    }
    .reveal-text .word {
      display: inline-block;
