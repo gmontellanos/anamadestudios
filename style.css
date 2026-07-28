@@ -816,3 +816,29 @@
      .gallery-scroll-track .gallery-card { width: 260px; }
      .gallery-grid { display: none; }
    }
+   
+   /* ===== BLOG SECTION ===== */
+   .blog-section {
+     position: relative;
+     padding: 7rem 4rem 6rem;
+     background: var(--yellow-lt);
+     text-align: center;
+     isolation: isolate;
+     z-index: 1;
+   }
+   .blog-header { max-width: 520px; margin: 0 auto 3rem; }
+   .blog-sub { color: #6a6a8a; font-size: 0.92rem; margin-top: 0.7rem; letter-spacing: 0.03em; }
+   .blog-coming {
+     font-family: var(--font-hand);
+     font-size: 1.2rem;
+     color: var(--tan);
+     letter-spacing: 0.08em;
+     padding: 3rem;
+     border: 1px dashed var(--tan);
+     border-radius: var(--radius-lg);
+     max-width: 400px;
+     margin: 0 auto;
+   }
+   @media (max-width: 900px) {
+     .blog-section { padding: 5rem 1.5rem 4rem; }
+   }
