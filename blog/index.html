@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — Ana Made Studios</title>
+  <link rel="icon" type="image/svg+xml" href="../images/bee.svg"/>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Caveat:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">ana made studios</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">about</a></li>
+      <li><a href="index.html#gallery">gallery</a></li>
+      <li><a href="blog.html">blog</a></li>
+      <li><a href="index.html#shop" class="nav-cta">shop on etsy</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about" class="mobile-link">about</a>
+    <a href="index.html#gallery" class="mobile-link">gallery</a>
+    <a href="blog.html" class="mobile-link">blog</a>
+    <a href="https://www.etsy.com" target="_blank" class="mobile-link">shop on etsy</a>
+    <a href="https://www.instagram.com/anamadestudios" target="_blank" class="mobile-link">@anamadestudios</a>
+  </div>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <img src="../images/flower-1.svg" class="deco deco-blog-flower1" alt="" aria-hidden="true"/>
+    <img src="../images/stem-1.svg"   class="deco deco-blog-stem1"   alt="" aria-hidden="true"/>
+    <img src="../images/bee.svg"      class="deco deco-blog-bee"     alt="" aria-hidden="true"/>
+    <div class="blog-hero-content">
+      <p class="section-label">the journal</p>
+      <h1 class="blog-hero-title">clay stories,<br/><em>tiny updates</em></h1>
+      <p class="blog-hero-sub">Markets, new arrivals, behind the scenes & studio life.</p>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>new arrivals</span>
+      <span class="dot">✦</span>
+      <span>market dates</span>
+      <span class="dot">✦</span>
+      <span>behind the scenes</span>
+      <span class="dot">✦</span>
+      <span>studio life</span>
+      <span class="dot">✦</span>
+      <span>clay tips</span>
+      <span class="dot">✦</span>
+      <span>new arrivals</span>
+      <span class="dot">✦</span>
+      <span>market dates</span>
+      <span class="dot">✦</span>
+      <span>behind the scenes</span>
+      <span class="dot">✦</span>
+      <span>studio life</span>
+      <span class="dot">✦</span>
+      <span>clay tips</span>
+      <span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- BLOG POSTS -->
+  <section class="blog-posts-section">
+    <img src="../images/flower-1.svg" class="deco deco-blog-flower2" alt="" aria-hidden="true"/>
+    <div class="blog-posts-grid" id="blogPostsGrid">
+      <!-- Posts will be loaded here by script -->
+      <div class="blog-coming-soon">
+        <p>✦ first post coming soon ✦</p>
+        <p class="blog-coming-sub">Check back soon for market dates, new arrivals, and behind-the-scenes content!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="../images/flower-1.svg" class="deco deco-footer-flower"  alt="" aria-hidden="true"/>
+    <img src="../images/stem-1.svg"   class="deco deco-footer-flower2" alt="" aria-hidden="true"/>
+    <div class="footer-inner">
+      <div class="footer-logo">ana made studios</div>
+      <p class="footer-tagline">Turning clay into tiny joys ✦ Northern California</p>
+      <div class="footer-divider"></div>
+      <div class="footer-links">
+        <a href="https://www.etsy.com" target="_blank">Etsy Shop</a>
+        <a href="https://www.instagram.com/anamadestudios" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@anamadestudios" target="_blank">TikTok</a>
+        <a href="blog.html">Blog</a>
+        <a href="mailto:hello@anamadestudios.com">hello@anamadestudios.com</a>
+      </div>
+      <p class="footer-copy">© 2026 Ana Made Studios · Handcrafted with love in Northern California</p>
+      <p class="footer-credit">Designed & developed by <a href="https://whiskeyandwasabi.com" target="_blank">Whiskey & Wasabi LLC</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
