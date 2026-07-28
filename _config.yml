@@ -1,0 +1,30 @@
+# Jekyll Configuration
+# Ana Made Studios
+
+title: Ana Made Studios
+description: Handcrafted clay jewelry made with love in Northern California. Tarnish-free, hypoallergenic, freshwater pearls.
+url: https://anamadestudios.com
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Exclude from build
+exclude:
+  - node_modules
+  - .gitignore
+  - README.md
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ page.title }} | Ana Made Studios</title>
+  <meta name="description" content="{{ page.description | default: site.description }}"/>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+  <link rel="icon" type="image/svg+xml" href="/images/bee.svg"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Caveat:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">ana made studios</a>
+    <ul class="nav-links">
+      <li><a href="/#about">about</a></li>
+      <li><a href="/#gallery">gallery</a></li>
+      <li><a href="/blog/">blog</a></li>
+      <li><a href="/#shop" class="nav-cta">shop on etsy</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/#about" class="mobile-link">about</a>
+    <a href="/#gallery" class="mobile-link">gallery</a>
+    <a href="/blog/" class="mobile-link">blog</a>
+    <a href="https://www.etsy.com" target="_blank" class="mobile-link">shop on etsy</a>
+    <a href="https://www.instagram.com/anamadestudios" target="_blank" class="mobile-link">@anamadestudios</a>
+  </div>
+
+  {{ content }}
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="/images/flower-1.svg" class="deco deco-footer-flower"  alt="" aria-hidden="true"/>
+    <img src="/images/stem-1.svg"   class="deco deco-footer-flower2" alt="" aria-hidden="true"/>
+    <div class="footer-inner">
+      <div class="footer-logo">ana made studios</div>
+      <p class="footer-tagline">Turning clay into tiny joys ✦ Northern California</p>
+      <div class="footer-divider"></div>
+      <div class="footer-links">
+        <a href="https://www.etsy.com" target="_blank">Etsy Shop</a>
+        <a href="https://www.instagram.com/anamadestudios" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@anamadestudios" target="_blank">TikTok</a>
+        <a href="/blog/">Blog</a>
+        <a href="mailto:hello@anamadestudios.com">hello@anamadestudios.com</a>
+      </div>
+      <p class="footer-copy">© 2026 Ana Made Studios · Handcrafted with love in Northern California</p>
+      <p class="footer-credit">Designed & developed by <a href="https://whiskeyandwasabi.com" target="_blank">Whiskey & Wasabi LLC</a></p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
