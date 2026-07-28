@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -251,8 +253,35 @@
       <h2 class="section-title reveal-text">clay stories, <em>tiny updates</em></h2>
       <p class="blog-sub">Behind the scenes, new arrivals, and studio life.</p>
     </div>
-    <div class="blog-coming">
-      <p>✦ posts coming soon ✦</p>
+    {% if site.posts.size > 0 %}
+      {% assign latest = site.posts.first %}
+      <div class="blog-latest">
+        {% if latest.thumbnail %}
+          <div class="blog-latest-img">
+            <img src="{{ latest.thumbnail }}" alt="{{ latest.title }}"/>
+          </div>
+        {% else %}
+          <div class="blog-latest-img blog-latest-img-placeholder"></div>
+        {% endif %}
+        <div class="blog-latest-text">
+          {% if latest.category %}
+            <span class="blog-post-category">{{ latest.category }}</span>
+          {% endif %}
+          <h3 class="blog-latest-title">{{ latest.title }}</h3>
+          {% if latest.excerpt %}
+            <p class="blog-latest-excerpt">{{ latest.excerpt }}</p>
+          {% endif %}
+          <p class="blog-post-date">{{ latest.date | date: "%B %d, %Y" }}</p>
+          <a href="{{ latest.url }}" class="btn btn-outline" style="margin-top:1.2rem;">read post →</a>
+        </div>
+      </div>
+    {% else %}
+      <div class="blog-coming">
+        <p>✦ posts coming soon ✦</p>
+      </div>
+    {% endif %}
+    <div class="blog-all-link">
+      <a href="/blog/" class="btn btn-primary">see all posts →</a>
     </div>
   </section>
 
