@@ -1015,8 +1015,17 @@
      color: var(--tan);
      letter-spacing: 0.1em;
      text-transform: uppercase;
+     margin-top: 1rem;
    }
-   .post-hero-img {
+   .post-body {
+     max-width: 720px;
+     margin: 0 auto;
+     padding: 4rem 2rem;
+     font-family: var(--font-body);
+     font-size: 1.05rem;
+     line-height: 1.9;
+     color: #4a4a6a;
+   }
      max-width: 800px;
      margin: 3rem auto 0;
      border-radius: var(--radius-lg);
